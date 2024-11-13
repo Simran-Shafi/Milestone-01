@@ -1,0 +1,172 @@
+
+/* General Styling */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 0;
+
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+/* Left Section Styling */
+
+.left-section {
+    background-color:rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-right: 5px solid #ba3e6b;
+    margin-bottom: 20px; /* For spacing in mobile view */
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+    
+}
+
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #ba3e6b;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2{
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffffff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    margin-bottom: 20px; /* For spacing in mobile view */
+    background-color:#ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+}
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    border: rgb(0, 0, 0) 1;
+}
+
+button:hover {
+    background-color: #000000;
+    color:white;
+    border-color: rgb(255, 255, 255) 1;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and below (768px or smaller screens) */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .left-section, .right-section {
+        width: 90%; /* Ensure both sections take up most of the screen */
+        margin-bottom: 10px;
+    }
+
+    .profile-picture {
+        width: 50%; /* Adjust profile picture size for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
+
+/* Very small screens (480px or smaller) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 60%; /* Adjust further for very small screens */
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}
+
